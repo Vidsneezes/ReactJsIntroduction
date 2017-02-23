@@ -5,6 +5,7 @@ import NameForm from './NameForm';
 import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
 import Calculator from './Calculator';
+import Containment from './Containment';
 
 
 function formatName(user){
@@ -105,6 +106,7 @@ class App extends Component {
           {view}
           {ActionLink()};
           <Calculator />
+          <Containment />
         </div>
       );
   }
