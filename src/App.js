@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NameForm from './NameForm';
+import FlavorForm from './FlavorForm';
+import Reservation from './Reservation';
+import Calculator from './Calculator';
 
 
 function formatName(user){
@@ -94,9 +98,13 @@ class App extends Component {
       }
       return (
         <div className="App">
+          <NameForm />
+          <FlavorForm />
+          <Reservation />
           <ToggleButton clickme={this.toggleRender}/>
           {view}
-            {ActionLink()};
+          {ActionLink()};
+          <Calculator />
         </div>
       );
   }
